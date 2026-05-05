@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NKTI 网页版测评</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="hero-card">
+      <h1 class="hero-title">SBTI 已经过时，NKTI 来了。</h1>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-head">
+        <div>
+          <p class="section-label">NKTI 在线测评</p>
+          <h2 id="progressText" class="question-progress">题目加载中</h2>
+        </div>
+        <button id="restartBtn" class="ghost-btn" type="button">重新开始</button>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressInner" class="progress-inner"></div>
+      </div>
+
+      <section id="questionSection">
+        <h3 id="questionText" class="question-title">请稍候，正在读取题库…</h3>
+        <div id="optionsContainer" class="options"></div>
+        <p id="tipText" class="tip-text hidden">请先选择一个选项再继续。</p>
+      </section>
+
+      <div class="footer-actions">
+        <button id="prevBtn" class="ghost-btn" type="button">上一题</button>
+        <button id="nextBtn" class="primary-btn" type="button">下一题</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
